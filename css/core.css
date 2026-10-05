@@ -1,0 +1,932 @@
+.site-header {
+  position: fixed;
+  width: 100%;
+  height: 75px;
+  top: 0;
+  left: 0;
+  background: #000000;
+  z-index: 10;
+}
+
+.site-header-container {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.site-header-left {
+  position: relative;
+  width: 33%;
+  height: 100%;
+}
+.site-header-left .site-header-left-container {
+  position: relative;
+  width: 60%;
+  height: 100%;
+  margin-left: auto;
+}
+.site-header-left .site-header-left-container .menu {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.site-header-left .site-header-left-container .menu .menu-container {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+}
+.site-header-left .site-header-left-container .menu .menu-container .menu-line {
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background: white;
+  border-radius: 1000px;
+}
+.site-header-left .site-header-left-container .menu .menu-container .menu-line:nth-child(1) {
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.site-header-left .site-header-left-container .menu .menu-container .menu-line:nth-last-child(1) {
+  bottom: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.site-header-middle {
+  position: relative;
+  width: 33%;
+  height: 100%;
+}
+.site-header-middle .site-header-middle-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.site-header-middle .site-header-middle-container .sitename {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.site-header-middle .site-header-middle-container .sitename .sitename-container {
+  position: relative;
+  display: flex;
+  text-decoration: unset;
+  margin: auto;
+  padding: 6px 12px;
+}
+.site-header-middle .site-header-middle-container .sitename .sitename-container p {
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  font-weight: 900;
+  margin: unset;
+  padding: unset;
+}
+.site-header-middle .site-header-middle-container .sitename .sitename-container p:nth-child(1) {
+  margin-right: 0.5em;
+}
+.site-header-middle .site-header-middle-container .sitename .sitename-container p:nth-last-child(1) {
+  opacity: 0.5;
+}
+
+.site-header-right {
+  position: relative;
+  width: 33%;
+  height: 100%;
+}
+.site-header-right .site-header-right-container {
+  position: relative;
+  width: 60%;
+  height: 100%;
+}
+.site-header-right .site-header-right-container .search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.site-header-right .site-header-right-container .search .search-container {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  margin-left: auto;
+}
+.site-header-right .site-header-right-container .search .search-container .search-icon {
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1000px;
+  border: 3px solid white;
+}
+
+.site-footer {
+  position: relative;
+  width: 100%;
+  background: #000000;
+  padding: 15px 0px;
+  margin-bottom: -30px;
+}
+.site-footer .site-footer-container {
+  position: relative;
+  display: flex;
+  width: 70%;
+  margin: auto;
+  padding: 10vh 0%;
+}
+.site-footer .site-footer-container .site-footer-left {
+  position: relative;
+  display: flex;
+  width: 50%;
+}
+.site-footer .site-footer-container .site-footer-left .site-footer-text {
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 0.65em;
+  opacity: 1;
+}
+.site-footer .site-footer-container .site-footer-right {
+  position: relative;
+  width: 50%;
+  opacity: 1;
+}
+.site-footer .site-footer-container .site-footer-right .site-footer-pill {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 1000px;
+  width: 60px;
+  height: 25px;
+  margin-left: auto;
+}
+.site-footer .site-footer-container .site-footer-right .site-footer-pill .site-footer-pill-text {
+  display: block;
+  color: #ffffff;
+  font-size: 0.6em;
+  margin: auto;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.site-footer-01 {
+  position: relative;
+  margin: 5vh 0px;
+  padding: 5vh 0px;
+}
+
+.site-footer-01-text-container {
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+
+.site-footer-01-text {
+  text-align: center;
+  font-weight: 900;
+  color: #000000;
+  font-size: 2em;
+  line-height: 1em;
+}
+
+.site-footer-01-pills {
+  position: relative;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: auto;
+}
+.site-footer-01-pills .site-footer-01-pill {
+  position: relative;
+  display: flex;
+  width: 49%;
+  height: 45px;
+  border: 2px solid #000000;
+  border-radius: 999px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  align-items: center;
+}
+.site-footer-01-pills .site-footer-01-pill .site-footer-01-pill-link {
+  position: relative;
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  text-decoration: none;
+  color: unset;
+}
+.site-footer-01-pills .site-footer-01-pill .site-footer-01-pill-link .site-footer-01-pill-text-min {
+  margin: unset;
+  font-weight: 400;
+  margin-left: auto;
+  margin-right: 5px;
+  color: #000000;
+  opacity: 0.5;
+}
+.site-footer-01-pills .site-footer-01-pill .site-footer-01-pill-link .site-footer-01-pill-text-max {
+  margin: unset;
+  font-weight: 900;
+  margin-right: auto;
+  color: #000000;
+}
+.site-footer-01-pills .full {
+  width: 99%;
+}
+
+.site-footer-01-address {
+  position: relative;
+  width: 100%;
+  text-decoration: none;
+}
+.site-footer-01-address .site-footer-01-address-text {
+  color: #000000;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.site-home-00 {
+  position: relative;
+  width: 100%;
+  height: 75vh;
+  background: #9c9c9c;
+  margin-top: 60px;
+}
+
+.site-home-01 {
+  position: relative;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+}
+
+.site-home-01-contaner {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.site-home-01-left {
+  position: relative;
+  width: 33%;
+}
+.site-home-01-left .site-home-01-left-container {
+  position: relative;
+  width: 60%;
+  margin-left: auto;
+}
+.site-home-01-left .site-home-01-left-container .site-home-01-heading {
+  color: #000000;
+  font-weight: 900;
+  font-size: 3.25em;
+  line-height: 1.1em;
+  margin: unset;
+  padding: unset;
+}
+
+.site-home-01-middle {
+  position: relative;
+  width: 33%;
+}
+.site-home-01-middle .site-home-01-middle-container {
+  position: relative;
+}
+.site-home-01-middle .site-home-01-middle-container .site-home-01-paragraph {
+  font-size: 1.2em;
+  color: #000000;
+  margin: unset;
+  padding: unset;
+}
+.site-home-01-middle .site-home-01-middle-container .site-home-01-link {
+  position: relative;
+  display: flex;
+  width: 100%;
+  text-decoration: unset;
+  margin-top: 1.75em;
+}
+.site-home-01-middle .site-home-01-middle-container .site-home-01-link .site-home-01-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 75px;
+  background: #000000;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.site-home-01-middle .site-home-01-middle-container .site-home-01-link .site-home-01-button .site-home-01-button-text {
+  position: relative;
+  margin: auto;
+  padding: unset;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 0.9em;
+  font-weight: 900;
+}
+
+.site-home-01-right {
+  position: relative;
+  width: 33%;
+}
+
+.site-home-02 {
+  position: relative;
+  margin: 10vh 0px;
+  padding: 15vh 0px;
+  background: #e8e8e8;
+}
+
+.site-home-02-contaner {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.site-home-02-left {
+  position: relative;
+  width: 25%;
+}
+
+.site-home-02-middle {
+  position: relative;
+  width: 50%;
+}
+.site-home-02-middle .site-home-02-middle-container {
+  position: relative;
+}
+.site-home-02-middle .site-home-02-middle-container .site-home-02-media {
+  position: relative;
+  width: 100%;
+  height: 55vh;
+  background: #9c9c9c;
+  border-radius: 25px;
+}
+
+.site-home-02-right {
+  position: relative;
+  width: 25%;
+}
+
+.site-home-03 {
+  position: relative;
+  margin: 20vh 0px;
+}
+
+.site-home-03-contaner {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.site-home-03-left {
+  position: relative;
+  width: 40%;
+}
+.site-home-03-left .site-home-03-left-contaner {
+  position: relative;
+  width: 66%;
+  margin-left: auto;
+}
+.site-home-03-left .site-home-03-left-contaner .site-home-03-heading {
+  color: #000000;
+  font-weight: 900;
+  font-size: 2.9em;
+  line-height: 0.9em;
+  margin: unset;
+  padding: unset;
+}
+.site-home-03-left .site-home-03-left-contaner .site-home-03-paragraph {
+  font-size: 1.2em;
+  color: #000000;
+  margin: unset;
+  padding: unset;
+  margin-top: 1em;
+}
+.site-home-03-left .site-home-03-left-contaner .site-home-03-link {
+  position: relative;
+  display: flex;
+  width: 100%;
+  text-decoration: unset;
+  margin-top: 1.75em;
+}
+.site-home-03-left .site-home-03-left-contaner .site-home-03-link .site-home-03-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 75px;
+  background: #000000;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.site-home-03-left .site-home-03-left-contaner .site-home-03-link .site-home-03-button .site-home-03-button-text {
+  position: relative;
+  margin: auto;
+  padding: unset;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 0.9em;
+  font-weight: 900;
+}
+
+.site-home-03-middle {
+  position: relative;
+  width: 5%;
+}
+.site-home-03-middle .site-home-03-middle-container {
+  position: relative;
+}
+
+.site-home-03-right {
+  position: relative;
+  width: 55%;
+}
+.site-home-03-right .site-home-03-right-contaner {
+  position: relative;
+  width: 100%;
+}
+.site-home-03-right .site-home-03-right-contaner .site-home-03-carousel {
+  position: relative;
+  display: flex;
+  list-style-type: none;
+  margin: unset;
+  padding: unset;
+}
+.site-home-03-right .site-home-03-right-contaner .site-home-03-carousel .site-home-03-carousel-item {
+  position: relative;
+  width: 46%;
+  height: 65vh;
+  margin-right: auto;
+}
+.site-home-03-right .site-home-03-right-contaner .site-home-03-carousel .site-home-03-carousel-item .site-home-03-carousel-item-container {
+  position: relative;
+  display: block;
+  text-decoration: none;
+}
+.site-home-03-right .site-home-03-right-contaner .site-home-03-carousel .site-home-03-carousel-item .site-home-03-carousel-item-container .site-home-03-carousel-item-fg {
+  position: absolute;
+  z-index: 2;
+  width: 80%;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.site-home-03-right .site-home-03-right-contaner .site-home-03-carousel .site-home-03-carousel-item .site-home-03-carousel-item-container .site-home-03-carousel-item-fg .carousel-item-title {
+  color: #000000;
+  font-weight: 900;
+  font-size: 1.3em;
+  margin: 0;
+  padding-bottom: 5px;
+}
+.site-home-03-right .site-home-03-right-contaner .site-home-03-carousel .site-home-03-carousel-item .site-home-03-carousel-item-container .site-home-03-carousel-item-fg .carousel-item-line {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: black;
+}
+.site-home-03-right .site-home-03-right-contaner .site-home-03-carousel .site-home-03-carousel-item .site-home-03-carousel-item-container .site-home-03-carousel-item-fg .carousel-item-details {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding: 12px 0px;
+}
+.site-home-03-right .site-home-03-right-contaner .site-home-03-carousel .site-home-03-carousel-item .site-home-03-carousel-item-container .site-home-03-carousel-item-fg .carousel-item-details .carousel-item-year-container {
+  position: relative;
+  align-items: center;
+  display: flex;
+  border: 2px solid black;
+  width: 45px;
+  height: 21px;
+  border-radius: 100px;
+}
+.site-home-03-right .site-home-03-right-contaner .site-home-03-carousel .site-home-03-carousel-item .site-home-03-carousel-item-container .site-home-03-carousel-item-fg .carousel-item-details .carousel-item-year-container .carousel-item-year {
+  position: relative;
+  display: block;
+  font-size: 0.6em;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: auto;
+  padding: unset;
+  color: #000000;
+}
+.site-home-03-right .site-home-03-right-contaner .site-home-03-carousel .site-home-03-carousel-item .site-home-03-carousel-item-container .site-home-03-carousel-item-fg .carousel-item-details .carousel-item-medium {
+  font-size: 0.85em;
+  font-weight: 900;
+  margin: 0;
+  margin-left: auto;
+  color: #000000;
+  text-transform: uppercase;
+  opacity: 0.3;
+}
+.site-home-03-right .site-home-03-right-contaner .site-home-03-carousel .site-home-03-carousel-item .site-home-03-carousel-item-container .site-home-03-carousel-item-bg {
+  position: relative;
+  width: 100%;
+  height: 65vh;
+  background: #e8e8e8;
+  border-radius: 25px;
+}
+
+.site-home-04 {
+  position: relative;
+  margin: 10vh 0px;
+  padding: 5vh 0px;
+}
+
+.site-home-04-contaner {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.site-home-04-left {
+  position: relative;
+  width: 30%;
+}
+
+.site-home-04-middle {
+  position: relative;
+  width: 40%;
+}
+.site-home-04-middle .site-home-04-middle-container {
+  position: relative;
+}
+.site-home-04-middle .site-home-04-middle-container .site-home-04-heading {
+  text-align: center;
+  font-size: 3.5em;
+  font-weight: 900;
+  line-height: 1em;
+  color: #000000;
+}
+.site-home-04-middle .site-home-04-middle-container .site-home-04-from {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.site-home-04-middle .site-home-04-middle-container .site-home-04-from input {
+  height: 50px;
+  margin-bottom: 10px;
+  border: 3px solid rgba(0, 0, 0, 0.25);
+}
+.site-home-04-middle .site-home-04-middle-container .site-home-04-from input::-moz-placeholder {
+  font-size: 0.8em;
+}
+.site-home-04-middle .site-home-04-middle-container .site-home-04-from input::placeholder {
+  font-size: 0.8em;
+}
+.site-home-04-middle .site-home-04-middle-container .site-home-04-from .site-home-04-from-row {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+.site-home-04-middle .site-home-04-middle-container .site-home-04-from .site-home-04-from-row input {
+  width: 49%;
+}
+.site-home-04-middle .site-home-04-middle-container .site-home-04-from .site-home-04-from-row input:nth-child(1) {
+  margin-right: auto;
+}
+.site-home-04-middle .site-home-04-middle-container .site-home-04-from textarea {
+  min-height: 160px;
+  margin-bottom: 15px;
+  resize: vertical;
+  border: 3px solid rgba(0, 0, 0, 0.25);
+}
+.site-home-04-middle .site-home-04-middle-container .site-home-04-from textarea::-moz-placeholder {
+  font-size: 0.8em;
+}
+.site-home-04-middle .site-home-04-middle-container .site-home-04-from textarea::placeholder {
+  font-size: 0.8em;
+}
+.site-home-04-middle .site-home-04-middle-container .site-home-04-from button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 75px;
+  background: #000000;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.site-home-04-middle .site-home-04-middle-container .site-home-04-from button p {
+  position: relative;
+  margin: auto;
+  padding: unset;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 0.9em;
+  font-weight: 900;
+}
+
+.site-home-04-right {
+  position: relative;
+  width: 30%;
+}
+
+.site-works-00 {
+  position: relative;
+  margin-top: 15%;
+  margin-bottom: 5%;
+}
+
+.site-works-00-container {
+  position: relative;
+  width: 50%;
+  margin: auto;
+}
+.site-works-00-container .site-works-00-title {
+  color: #000000;
+  font-size: 3em;
+  line-height: 1em;
+  font-weight: 900;
+  text-align: center;
+}
+.site-works-00-container .site-works-00-subtitle {
+  color: #000000;
+  font-size: 1em;
+  line-height: 1.25em;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+.site-works-01 {
+  position: relative;
+}
+
+.site-works-01-container {
+  position: relative;
+  width: 75%;
+  margin: auto;
+}
+
+.site-works-01-grid {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+.site-works-01-grid .site-works-01-grid-item {
+  position: relative;
+  width: 32%;
+  margin: 4px 0.5%;
+}
+.site-works-01-grid .site-works-01-grid-item .site-works-01-grid-item-container {
+  text-decoration: none;
+  color: #000000;
+}
+.site-works-01-grid .site-works-01-grid-item .site-works-01-grid-item-container .site-works-01-grid-item-top {
+  position: relative;
+}
+.site-works-01-grid .site-works-01-grid-item .site-works-01-grid-item-container .site-works-01-grid-item-top .site-works-01-grid-item-image-container {
+  position: relative;
+  margin: 0px auto;
+  width: 95%;
+  height: 300px;
+  background: #9c9c9c;
+  border-radius: 20px;
+}
+.site-works-01-grid .site-works-01-grid-item .site-works-01-grid-item-container .site-works-01-grid-item-bottom {
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+.site-works-01-grid .site-works-01-grid-item .site-works-01-grid-item-container .site-works-01-grid-item-bottom .site-works-01-grid-item-title {
+  color: #000000;
+  margin: unset;
+  font-size: 1.5em;
+  line-height: 0.9em;
+  font-weight: 900;
+  margin: 3% 0px;
+  text-align: center;
+}
+.site-works-01-grid .site-works-01-grid-item .site-works-01-grid-item-container .site-works-01-grid-item-bottom .site-works-01-grid-item-subtitle {
+  position: relative;
+  display: flex;
+}
+.site-works-01-grid .site-works-01-grid-item .site-works-01-grid-item-container .site-works-01-grid-item-bottom .site-works-01-grid-item-subtitle p {
+  font-size: 0.65em;
+  margin: unset;
+  opacity: 0.75;
+  text-transform: uppercase;
+}
+.site-works-01-grid .site-works-01-grid-item .site-works-01-grid-item-container .site-works-01-grid-item-bottom .site-works-01-grid-item-subtitle .site-works-01-grid-item-medium {
+  margin-left: auto;
+  font-weight: 900;
+}
+.site-works-01-grid .site-works-01-grid-item .site-works-01-grid-item-container .site-works-01-grid-item-bottom .site-works-01-grid-item-subtitle .site-works-01-grid-item-year {
+  margin-left: 5px;
+  margin-right: auto;
+  font-weight: 300;
+}
+
+.site-work-00 {
+  position: relative;
+  margin-top: 15%;
+  margin-bottom: 5%;
+}
+
+.site-work-00-container {
+  position: relative;
+  width: 50%;
+  margin: auto;
+}
+.site-work-00-container .site-work-00-title {
+  color: #000000;
+  font-size: 3em;
+  line-height: 1em;
+  font-weight: 900;
+  text-align: center;
+  margin: 2% 0px;
+}
+.site-work-00-container .site-work-00-subtitle {
+  position: relative;
+  display: flex;
+}
+.site-work-00-container .site-work-00-subtitle p {
+  color: #000000;
+  font-size: 1em;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 0.5;
+  margin: unset;
+}
+.site-work-00-container .site-work-00-subtitle .site-work-00-medium {
+  margin-left: auto;
+  font-weight: 900;
+}
+.site-work-00-container .site-work-00-subtitle .site-work-00-year {
+  margin-left: 5px;
+  margin-right: auto;
+}
+
+.site-work-01 {
+  position: relative;
+  margin: 4vh 0;
+}
+
+.site-work-01-container {
+  position: relative;
+  width: 60%;
+  margin: auto;
+}
+
+.site-work-01-item {
+  position: relative;
+  text-decoration: none;
+}
+.site-work-01-item .site-work-01-item-container {
+  position: relative;
+}
+.site-work-01-item .site-work-01-item-container .site-work-01-item-top {
+  position: relative;
+}
+.site-work-01-item .site-work-01-item-container .site-work-01-item-top .site-work-01-item-image-container {
+  position: relative;
+  width: 100%;
+  height: 360px;
+  background: #9c9c9c;
+  border-radius: 20px;
+}
+.site-work-01-item .site-work-01-item-container .site-work-01-item-bottom {
+  position: relative;
+  display: flex;
+  width: 100%;
+  padding: 0% 5%;
+  margin: 0 auto;
+}
+.site-work-01-item .site-work-01-item-container .site-work-01-item-bottom .site-work-01-item-bottom-left {
+  position: relative;
+  width: 50%;
+}
+.site-work-01-item .site-work-01-item-container .site-work-01-item-bottom .site-work-01-item-bottom-left .site-work-01-item-title {
+  color: #000000;
+}
+.site-work-01-item .site-work-01-item-container .site-work-01-item-bottom .site-work-01-item-bottom-right {
+  position: relative;
+  width: 50%;
+}
+.site-work-01-item .site-work-01-item-container .site-work-01-item-bottom .site-work-01-item-bottom-right .site-work-01-item-subtitle {
+  display: flex;
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  margin-top: 5px;
+}
+.site-work-01-item .site-work-01-item-container .site-work-01-item-bottom .site-work-01-item-bottom-right .site-work-01-item-subtitle .site-work-01-item-medium {
+  margin-left: auto;
+}
+.site-work-01-item .site-work-01-item-container .site-work-01-item-bottom .site-work-01-item-bottom-right .site-work-01-item-subtitle .site-work-01-item-year {
+  margin-left: 5px;
+}
+
+.site-about-00 {
+  position: relative;
+}
+
+.site-about-00-container {
+  position: 75%;
+  margin: auto;
+}
+
+.site-about-00-image-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  margin: auto;
+  background: #9c9c9c;
+}
+
+.site-about-01 {
+  position: relative;
+}
+
+.site-about-01-container {
+  position: relative;
+  width: 45%;
+  margin: auto;
+}
+
+.site-about-01-heading {
+  font-weight: 900;
+  color: #000000;
+}
+
+.site-about-01-paragraph {
+  color: #000000;
+}
+
+.site-about-02 {
+  position: relative;
+  background: #000000;
+}
+
+.site-about-02-container {
+  position: relative;
+  width: 45%;
+  margin: auto;
+}
+.site-about-02-container .site-about-02-qoute {
+  position: relative;
+  width: 70%;
+  display: flex;
+  margin: auto;
+  padding: 10% 0;
+}
+.site-about-02-container .site-about-02-qoute .site-about-02-qoute-bar {
+  width: 5px;
+  height: 60px;
+  border-radius: 100px;
+  background: #ffffff;
+  margin: auto;
+}
+.site-about-02-container .site-about-02-qoute .site-about-02-qoute-text {
+  color: #ffffff;
+  text-align: center;
+  margin: auto;
+  font-size: 2em;
+}
+
+.site-contact-00 {
+  position: relative;
+  margin-top: 20vh;
+}
+
+.site-contact-00-container {
+  position: relative;
+  width: 60%;
+  margin: auto;
+}
+
+.site-contact-00-heading {
+  text-align: center;
+  color: #000000;
+  font-size: 3em;
+  line-height: 0.9em;
+  font-weight: 900;
+  margin: unset;
+}
+
+.site-contact-00-subheading {
+  text-align: center;
+  color: #000000;
+}/*# sourceMappingURL=core.css.map */
